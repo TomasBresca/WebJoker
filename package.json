@@ -1,0 +1,26 @@
+{
+  "name": "webjoker",
+  "version": "1.0.0",
+  "description": "Landing page para EL JOKER - La plataforma de juegos más rápida y segura",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [
+    "casino",
+    "plataforma",
+    "juegos",
+    "astro",
+    "tailwind"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/tailwind": "^5.0.0",
+    "astro": "*",
+    "tailwindcss": "^3.3.3"
+  }
+}

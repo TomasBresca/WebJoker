@@ -1,0 +1,58 @@
+<header class="fixed w-full z-50 bg-joker-black/80 backdrop-blur-md border-b border-joker-purple/30">
+  <div class="container mx-auto px-4">
+    <nav class="flex justify-between items-center py-4">
+      <div class="text-2xl font-display text-white">
+        <a href="#hero" class="neon-text font-bold tracking-wider">EL JOKER</a>
+      </div>
+      
+      <!-- Menú para móvil -->
+      <div class="block md:hidden">
+        <button id="mobile-menu-button" class="text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Menú para desktop -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#ganadores" class="text-white hover:text-joker-purple transition-colors font-semibold uppercase tracking-wide">Ganadores</a>
+        <a href="#jugar" class="text-white hover:text-joker-purple transition-colors font-semibold uppercase tracking-wide">Jugar</a>
+        <a href="#soporte" class="text-white hover:text-joker-purple transition-colors font-semibold uppercase tracking-wide">Soporte</a>
+        <a href="#compartir" class="text-white hover:text-joker-purple transition-colors font-semibold uppercase tracking-wide">Compartir</a>
+      </div>
+    </nav>
+  </div>
+  
+  <!-- Menú móvil desplegable -->
+  <div id="mobile-menu" class="hidden bg-joker-black/95 md:hidden">
+    <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+      <a href="#ganadores" class="text-white hover:text-joker-purple transition-colors font-semibold uppercase tracking-wide py-2 border-b border-joker-purple/20">Ganadores</a>
+      <a href="#jugar" class="text-white hover:text-joker-purple transition-colors font-semibold uppercase tracking-wide py-2 border-b border-joker-purple/20">Jugar</a>
+      <a href="#soporte" class="text-white hover:text-joker-purple transition-colors font-semibold uppercase tracking-wide py-2 border-b border-joker-purple/20">Soporte</a>
+      <a href="#compartir" class="text-white hover:text-joker-purple transition-colors font-semibold uppercase tracking-wide py-2">Compartir</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Script para el menú móvil
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      
+      // Cerrar el menú al hacer click en un enlace
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+  });
+</script> 

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-joker-dark text-white;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply font-display uppercase py-3 px-6 rounded-md bg-joker-purple hover:bg-joker-violet transition-colors duration-300 text-white font-bold shadow-lg hover:shadow-joker-violet/50 hover:scale-105 transform transition-transform tracking-wider;
+  }
+  
+  .btn-lg {
+    @apply py-4 px-8 text-lg;
+  }
+  
+  .btn-full {
+    @apply w-full;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-5xl font-display uppercase text-center mb-10 text-white font-bold tracking-wide;
+  }
+  
+  .casino-element {
+    @apply absolute opacity-30 pointer-events-none;
+  }
+  
+  .neon-text {
+    @apply font-display text-white font-bold;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #8A2BE2, 0 0 20px #8A2BE2;
+  }
+  
+  .neon-border {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #8A2BE2, 0 0 20px #8A2BE2;
+  }
+}
+
+/* Estilos de animación para los elementos de casino flotantes */
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-element:nth-child(2n) {
+  animation-delay: 1s;
+}
+
+.floating-element:nth-child(3n) {
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+} 

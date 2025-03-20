@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Ganadores from '../components/Ganadores.astro';
+import JugarAhora from '../components/JugarAhora.astro';
+import Soporte from '../components/Soporte.astro';
+import Compartir from '../components/Compartir.astro';
+---
+
+<Layout title="EL JOKER | La Plataforma de Juegos Más Rápida">
+  <Navbar />
+  <main>
+    <Hero />
+    <Ganadores />
+    <Soporte />
+    <JugarAhora />
+    <Compartir />
+  </main>
+  
+  <!-- Footer simple -->
+  <footer class="bg-joker-black py-6 border-t border-joker-purple/20">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <p class="text-gray-400 text-sm">© 2023 EL JOKER. Todos los derechos reservados.</p>
+        </div>
+        <div>
+          <p class="text-gray-400 text-sm">Juego responsable. Solo para mayores de 18 años.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</Layout> 
