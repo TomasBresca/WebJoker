@@ -1,20 +1,30 @@
-<section id="hero" class="relative min-h-screen flex items-center py-20 overflow-hidden bg-gradient-to-b from-joker-black to-joker-dark">
+<section id="hero" class="relative min-h-screen flex items-center py-20 overflow-hidden">
+  <!-- Imagen de fondo con degradado -->
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gradient-radial from-joker-dark/80 via-joker-dark/90 to-joker-dark/95 mix-blend-multiply z-10"></div>
+    <div class="absolute inset-0 bg-joker-violet/30 mix-blend-overlay z-10"></div>
+    <img src="/images/61.webp" alt="Fondo" class="absolute inset-0 w-full h-full object-cover" />
+  </div>
+  
   <div class="container mx-auto px-4 relative z-10">
     <div class="flex flex-col md:flex-row items-center">
       <div class="w-full md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-        <h1 class="text-4xl md:text-6xl font-display uppercase mb-6 font-extrabold tracking-wide">
+        <h1 class="text-5xl md:text-7xl font-display uppercase mb-6 font-extrabold tracking-wide">
           <span class="block">
-            <span class="neon-text text-joker-purple">SEGURIDAD</span> Y
+            <span class="text-joker-purple">SEGURIDAD</span> Y
           </span>
           <span class="block">
-            <span class="neon-text text-joker-purple">VELOCIDAD</span>
+            <span class="text-joker-purple">VELOCIDAD</span>
           </span>
-          <span class="block">GARANTIZADO</span>
+          <span class="block">GARANTIZADAS</span>
         </h1>
         <p class="text-xl mb-8 text-gray-300 max-w-xl mx-auto md:mx-0">
           La plataforma más rápida de Argentina con cargas y retiros automáticos 24/7. Creá tu cuenta en segundos.
         </p>
-        <a href="#soporte" class="btn btn-lg btn-full md:btn-full md:max-w-xs">CONTACTARNOS</a>
+        <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+          <a href="#soporte" class="btn text-center btn-lg btn-full md:btn-full md:max-w-xs">CONTACTARNOS</a>
+          <a href="#bono" class="btn-white btn-lg btn-full md:btn-full md:max-w-xs bg-white text-center text-joker-purple hover:bg-gray-100 font-display uppercase font-bold tracking-wider rounded-md py-4 px-8 shadow-lg hover:shadow-white/20 hover:scale-105 transform transition-transform">RECLAMAR BONO</a>
+        </div>
       </div>
       
       <div class="w-full md:w-1/2 flex justify-center md:justify-end">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -23,6 +23,10 @@
     @apply w-full;
   }
   
+  .btn-white {
+    @apply font-display uppercase py-3 px-6 rounded-md bg-white hover:bg-gray-100 transition-colors duration-300 text-joker-purple font-bold shadow-lg hover:shadow-white/20 hover:scale-105 transform transition-transform tracking-wider;
+  }
+  
   .section-title {
     @apply text-3xl md:text-5xl font-display uppercase text-center mb-10 text-white font-bold tracking-wide;
   }
@@ -33,7 +37,6 @@
   
   .neon-text {
     @apply font-display text-white font-bold;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #8A2BE2, 0 0 20px #8A2BE2;
   }
   
   .neon-border {
