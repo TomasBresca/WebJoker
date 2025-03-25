@@ -1,0 +1,71 @@
+<section class="py-20 bg-joker-black relative overflow-hidden">
+  <div class="container mx-auto px-4">
+    <div class="text-center">
+      <h2 class="text-5xl md:text-7xl font-display uppercase mb-8 font-extrabold tracking-wide">
+        <span class="block">
+          <span class="text-joker-purple">MULTIPLICÁ </span>TUS
+        </span>
+        <span class="block">
+           CHANCES, RECLAMÁ TU
+          <span class="text-joker-purple">BONO</span>
+        </span>
+      </h2>
+      
+      <div class="mb-12 bg-joker-dark/50 p-8 rounded-2xl border border-joker-purple/30 backdrop-blur-sm">
+        <p class="text-2xl md:text-3xl font-buttons mb-4 text-white/90">BONO VENCE EN</p>
+        <div id="countdown" class="text-5xl md:text-7xl font-buttons text-joker-purple font-bold mb-8"></div>
+      </div>
+
+      <h3 class="text-2xl md:text-3xl font-display mb-8">
+        YA SOMOS MÁS DE <span class="text-joker-purple">180.000 </span>GANANDO ¿TE VAS A QUEDAR <span class="text-joker-purple">AFUERA</span>?
+      </h3>
+
+      <a href="#bono" class="btn btn-lg btn-full md:max-w-md mx-auto">RECLAMAR MI BONO</a>
+    </div>
+  </div>
+
+  <!-- Elementos decorativos -->
+  <div class="casino-element floating-element left-[10%] top-[20%]">
+    <div class="w-24 h-24 rounded-full bg-joker-purple/20 backdrop-blur-sm"></div>
+  </div>
+  <div class="casino-element floating-element right-[15%] bottom-[30%]">
+    <div class="w-20 h-20 rounded-full bg-joker-violet/20 backdrop-blur-sm"></div>
+  </div>
+</section>
+
+<script>
+  // Contador regresivo
+  function startCountdown() {
+    let timeLeft = 18 * 60; // 18 minutos en segundos
+    const countdownElement = document.getElementById('countdown');
+    
+    if (!countdownElement) return;
+    
+    const countdownInterval = setInterval(() => {
+      const minutes = Math.floor(timeLeft / 60);
+      const seconds = timeLeft % 60;
+      countdownElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      
+      if (timeLeft <= 0) {
+        clearInterval(countdownInterval);
+        countdownElement.textContent = "¡TIEMPO AGOTADO!";
+        countdownElement.classList.add('text-joker-red');
+      }
+      timeLeft--;
+    }, 1000);
+  }
+
+  // Iniciar contador cuando el componente se monte
+  document.addEventListener('DOMContentLoaded', () => {
+    startCountdown();
+  });
+</script>
+
+<style>
+  #countdown {
+    text-shadow: 0 0 10px rgba(201, 41, 255, 0.5),
+                 0 0 20px rgba(201, 41, 255, 0.3),
+                 0 0 30px rgba(201, 41, 255, 0.2);
+    letter-spacing: 0.1em;
+  }
+</style> 

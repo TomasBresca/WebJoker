@@ -14,7 +14,8 @@ module.exports = {
         whatsapp: '#25D366',
       },
       fontFamily: {
-        display: ['DM Sans', 'sans-serif'],
+        display: ['Winky Sans', 'sans-serif'],
+        buttons: ['Noto Sans', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
