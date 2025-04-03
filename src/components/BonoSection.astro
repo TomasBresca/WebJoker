@@ -1,13 +1,28 @@
 <section class="py-20 bg-joker-black relative overflow-hidden">
-  <div class="container mx-auto px-4">
+  <!-- Fondo responsivo -->
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <img 
+      src="/images/bono-desktop.webp" 
+      alt="Fondo Bono Desktop" 
+      class="hidden md:block w-full h-full object-cover"
+    />
+    <img 
+      src="/images/bono.mobile.webp" 
+      alt="Fondo Bono Mobile" 
+      class="block md:hidden w-full h-full object-cover"
+    />
+  </div>
+
+  <div class="container mx-auto px-4 relative z-10">
     <div class="text-center">
       <h2 class="text-5xl md:text-7xl font-display uppercase mb-8 font-extrabold tracking-wide">
         <span class="block">
-          <span class="text-joker-purple">MULTIPLICÁ </span>TUS
+          <span class="text-joker-purple [text-shadow:_0_0_4px_white,_0_0_4px_white,_0_0_4px_white]">MULTIPLICÁ </span>TUS
         </span>
         <span class="block">
            CHANCES, RECLAMÁ TU
-          <span class="text-joker-purple">BONO</span>
+          <span class="text-joker-purple [text-shadow:_0_0_4px_white,_0_0_4px_white,_0_0_4px_white]">BONO</span>
         </span>
       </h2>
       
@@ -17,7 +32,7 @@
       </div>
 
       <h3 class="text-2xl md:text-3xl font-display mb-8">
-        YA SOMOS MÁS DE <span class="text-joker-purple">180.000 </span>GANANDO ¿TE VAS A QUEDAR <span class="text-joker-purple">AFUERA</span>?
+        YA SOMOS MÁS DE <span class="text-joker-purple [text-shadow:_0_0_2px_white,_0_0_2px_white,_0_0_2px_white]">180.000 </span>GANANDO ¿TE VAS A QUEDAR <span class="text-joker-purple [text-shadow:_0_0_2px_white,_0_0_2px_white,_0_0_2px_white]">AFUERA</span>?
       </h3>
 
       <a href="#bono" class="btn btn-lg btn-full md:max-w-md mx-auto">RECLAMAR MI BONO</a>
